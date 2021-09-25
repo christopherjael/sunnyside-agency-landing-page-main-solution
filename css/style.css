@@ -1,0 +1,284 @@
+/* 
+font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif;
+*/
+
+:root{
+    font-size: 18px;
+
+    /* Primary */
+    --Soft_red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark_desaturated_cyan: hsl(167, 40%, 24%);
+    --Dark_blue: hsl(198, 62%, 26%);
+    --Dark_moderate_cyan: hsl(168, 34%, 41%);
+
+    /* Neutral */
+    --Very_dark_desaturated_blue: hsl(212, 27%, 19%);
+    --Very_dark_grayish_blue: hsl(213, 9%, 39%);
+    --Dark_grayish_blue: hsl(232, 10%, 55%);
+    --Grayish_blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header{
+    background-image: url('../images/desktop/image-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3em 5em;
+    color: var(--White);
+    width: auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu .menu-title img{
+    width: 120%;
+}
+
+.menu .menu-options a{
+    text-decoration: none;
+    color: var(--White);
+    margin-left: 2em;
+}
+
+.menu .menu-options .contact-btn{
+    background-color: var(--White);
+    color: var(--Very_dark_desaturated_blue);
+    font-family: 'Fraunces', serif;
+    border-radius: 2em;
+    padding: 1em 1.6em;
+    text-transform: uppercase;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner h1{
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    font-size: 2.5em;
+    letter-spacing: 0.2em;
+    font-weight: 900;
+}
+
+.banner img{
+    width: 40px;
+    margin-bottom: 15em;
+}
+
+.collages{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.collages .text-content{
+    padding: 8em;
+    color: var(--Very_dark_desaturated_blue);
+}
+
+.collages .text-content h2{
+    font-family: 'Fraunces', serif;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.collages .text-content p{
+    line-height: 1.5;
+    margin:2em 0;
+    color: var(--Dark_grayish_blue);
+}
+
+.collages .text-content a{
+    text-decoration: none;
+    color: var(--Very_dark_desaturated_blue);
+    text-decoration: uppercase;
+    font-family: 'Fraunces', serif;
+}
+
+
+
+.collages .egg{
+    background-image: url(../images/desktop/image-transform.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.collages .cup{
+    background-image: url(../images/desktop/image-stand-out.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cherry{
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: var(--Dark_desaturated_cyan);
+    padding: 0 10em;
+}
+
+.cherry h2{
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    margin-bottom: 1em;
+    margin-top: 15em;
+}
+
+.cherry p{
+    margin-bottom: 2em;
+}
+
+.orange{
+    background-image: url(../images/desktop/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: var(--Dark_blue);
+    padding: 0 10em;
+}
+
+.orange h2{
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    margin-bottom: 1em;
+    margin-top: 15em;
+}
+
+.client-testimonials{
+    width: 100%;
+}
+
+.client-testimonials h2{
+    text-align: center;
+    color: var(--Grayish_blue);
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    margin-top: 5em;
+    margin-bottom: 3em;
+    font-size: 1.1em;
+    letter-spacing: .2em;
+}
+
+.testimonials-container{
+    display:flex;
+    justify-content: space-around;
+    gap: 2em;
+    padding: 0 6em 6em 6em;
+}
+
+.testimonials-container .testimonial{
+    text-align: center;
+}
+
+.testimonials-container .testimonial img{
+    width: 5em;
+    border-radius: 100%
+}
+
+.testimonials-container .testimonial p{
+    margin: 2em 0;
+    line-height: 1.5;
+    color: var(--Very_dark_grayish_blue);
+}
+
+.testimonials-container .testimonial h3{
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: var(--Very_dark_desaturated_blue);
+    margin-bottom: .5em;
+}
+
+.testimonials-container .testimonial a{
+    color: var(--Grayish_blue);
+    font-size: .8em;
+}
+
+.footer-collages{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 450px;
+}
+
+.footer-collages .milk{
+    background-image: url('../images/desktop/image-gallery-milkbottles.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-collages .orange-cut{
+    background-image: url('../images/desktop/image-gallery-orange.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-collages .cone{
+    background-image: url('../images/desktop/image-gallery-cone.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-collages .sugar-cube{
+    background-image: url('../images/desktop/image-gallery-sugarcubes.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer{
+    background: #90D4C5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 0;
+}
+
+footer .footer-menu{
+    margin: 2em 0 5em 0;
+}
+footer .footer-menu a{
+    text-decoration: none;
+    margin: 0 1.5em;
+    color: var(--Dark_moderate_cyan);
+}
+
+footer .contact i{
+    font-size: 1.3em;
+    margin: 0 .5em;
+    color: var(--Dark_blue);
+}
+
+footer svg{
+    fill:var(--Dark_blue);
+}
